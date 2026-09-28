@@ -40,17 +40,3 @@ Create a `screenshots` folder and save:
 3. `client2.png`: second client showing several replies and Goodbye.
 On Windows, use Win+Shift+S to capture each terminal.
 
-`test_output.txt` contains actual automated test output from the preparation
- environment. It is a text log, not a screenshot of your computer.
-
-## GitHub submission
-1. Create a repository named `CSC334-Lab03-Multithreaded-Sockets` with Public
-   visibility.
-2. Upload server.py, client.py, README.md, test_output.txt and your screenshots
-   folder as extracted files (do not upload only the ZIP).
-3. Commit the files, verify the repository is publicly viewable, and copy the
-   repository URL into your course submission form.
-
-For separate computers on a trusted LAN, set server HOST to `0.0.0.0` and client
-HOST to the server computer's LAN IP. Allow port 5000 through the local firewall.
-The default localhost setting works when all terminals are on one computer.
