@@ -1,0 +1,33 @@
+[LISTENING] 127.0.0.1:5000 | Press Ctrl+C to stop.
+[CONNECTED] Thread: ClientThread-1 | Client IP: 127.0.0.1 | Port: 56662
+[CONNECTED] Thread: ClientThread-2 | Client IP: 127.0.0.1 | Port: 56666
+[MESSAGE] Thread: ClientThread-2 | Client IP: 127.0.0.1 | Port: 56666 | Hello from client 2
+[MESSAGE] Thread: ClientThread-1 | Client IP: 127.0.0.1 | Port: 56662 | Hello from client 1
+[MESSAGE] Thread: ClientThread-1 | Client IP: 127.0.0.1 | Port: 56662 | Second message from client 1
+[MESSAGE] Thread: ClientThread-2 | Client IP: 127.0.0.1 | Port: 56666 | Second message from client 2
+[MESSAGE] Thread: ClientThread-1 | Client IP: 127.0.0.1 | Port: 56662 | exit
+[MESSAGE] Thread: ClientThread-2 | Client IP: 127.0.0.1 | Port: 56666 | exit
+[DISCONNECTED] Thread: ClientThread-1 | Client IP: 127.0.0.1 | Port: 56662
+[DISCONNECTED] Thread: ClientThread-2 | Client IP: 127.0.0.1 | Port: 56666
+[CONNECTED] Thread: ClientThread-3 | Client IP: 127.0.0.1 | Port: 56678
+[MESSAGE] Thread: ClientThread-3 | Client IP: 127.0.0.1 | Port: 56678 | fragmented
+[MESSAGE] Thread: ClientThread-3 | Client IP: 127.0.0.1 | Port: 56678 | next
+[MESSAGE] Thread: ClientThread-3 | Client IP: 127.0.0.1 | Port: 56678 | exit
+[DISCONNECTED] Thread: ClientThread-3 | Client IP: 127.0.0.1 | Port: 56678
+[STOPPED] Server shutting down.
+
+--- Client 1: actual captured stdout ---
+Connected to 127.0.0.1:5000. Type exit to disconnect.
+You: Server: Server received: Hello from client 1
+You: Server: Server received: Second message from client 1
+You: Server: Goodbye!
+
+
+--- Client 2: actual captured stdout ---
+Connected to 127.0.0.1:5000. Type exit to disconnect.
+You: Server: Server received: Hello from client 2
+You: Server: Server received: Second message from client 2
+You: Server: Goodbye!
+
+
+PASS: two simultaneous client sessions; repeated exchanges; exit replies; fragmented and coalesced TCP messages.
